@@ -1,0 +1,120 @@
+.vision-0 {
+    background: #2FC7C8;
+    border: 1px solid #3B3A3A;
+    border-radius: 36px;
+    display: flex;
+  }
+  .vision-1 {
+    background: #2DC9A2;
+    border: 1px solid #3B3A3A;
+    border-radius: 36px;
+    display: flex;
+  } 
+  .vision-2 {
+    background: #2FC7C8;
+    border: 1px solid #3B3A3A;
+    border-radius: 36px;
+    display: flex;
+  }  
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  
+  .section-content.left {
+    flex-direction: row;
+  }
+  
+  .section-content.right {
+    flex-direction: row-reverse;
+  }
+  
+  .text-content {
+    flex: 8;
+    text-align: left;
+    padding: 20px 20px 25px 20px;
+  }
+  
+  .section-title {
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.005em;
+    color: #000000;
+  }
+  
+  .cover:nth-child(3) .section-icon {
+    margin-left: 5px;
+  }
+  
+  .right{
+    padding: 18px 0px 18px 21px;
+    margin-left: clamp(9.125rem, -15.669rem + 23.4742vw, 12.5rem);
+    margin-bottom: 50px;
+  }
+  .left{
+    margin-right: clamp(0.125rem, -13.669rem + 23.4742vw, 12.5rem);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 18px 0px 18px 21px;
+  }
+  
+  .section-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    color: #171717;
+  }
+  
+  .left .image-content {
+    text-align: left;
+    margin-top: -101px;
+  }
+
+  .right .image-content {
+    text-align: right;
+    margin-top: -101px;
+  }
+  
+  .section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .col-8{width: 85%;}
+  .col-4{width: 15%;}
+  .icon-top{top: -60px;right: 82px;}
+  .icon-left{
+    top: 113px;
+    left: 70px;
+
+  }
+  .icon-right{
+    top: 40%;
+    right: 82px;    
+  }
+  @media screen and (max-width: 767px) {
+    .icon-right{display: none;}
+    .icon-left{display: none;}
+    .icon-top{display: none;}
+    .right{
+        margin-left: inherit;
+    }
+    .image-content{
+        display: none;
+    }
+  }

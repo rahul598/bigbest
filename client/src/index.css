@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rowdies:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #9e9e9e0a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rowdies', display;
+  color: #000000;
+}
+
+
+@layer components {
+  .btn-primary {
+    @apply font-display text-[18px] font-normal;
+    padding: clamp(1.25rem, 1.1779rem + 0.3205vw, 1.5625rem);
+    color: #fff;
+    background-color: #4BC7C8;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 0 0 #000000;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #4BC7C8;
+    box-shadow: 0px 0px 0px 0px #9e9e9e;
+    border-color: transparent;
+    transform: translate(3px, 3px);
+  }
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(180deg, #E6FAF8 0%, #FFFFFF 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00AA9B 0%, #00D1BE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-gradient {
+  background: linear-gradient(90deg, #FF6B00 0%, #FF8533 100%);
+  transition: all 0.3s ease;
+}
+
+.button-gradient:hover {
+  background: linear-gradient(90deg, #FF8533 0%, #FF6B00 100%);
+  transform: translateY(-2px);
+}
+
+#root {
+  width: 100%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.stats-card {
+  @apply bg-white rounded-xl shadow-lg p-6;
+}
+
+.stats-value {
+  @apply text-4xl font-bold text-[#2D3648];
+}
+
+.stats-label {
+  @apply text-base text-[#545F71];
+}
+
+.min-h-screens {
+  background-image: url(https://vinsonedge.com/wp-content/uploads/2025/01/Home-BG.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.elemenBackgroundOverlay {
+  background-image: url(https://dtthemes.kinsta.cloud/a-for-apple/wp-content/uploads/sites/2/2024/02/slider-2-star-bg.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.mbtn {
+  font-family: 'Rowdies', display;
+  font-size: 18px;
+  font-weight: 400;
+  padding: clamp(1.25rem, 1.1779rem + 0.3205vw, 1.5625rem);
+  color: #fff;
+  background-color: #4BC7C8;
+  box-shadow: 3px 3px 0 0 #000000;
+  border-radius: 25px;
+}
+
+.btn-about {
+  min-width: 232px;
+  padding: 13px 22px;
+}
+
+.mbtn:hover {
+  background-color: #4BC7C8;
+  box-shadow: 0px #9e9e9e;
+  border-color: transparent;
+  box-shadow: inherit;
+}
+
+.bgVideo {
+  background-image: url(https://vinsonedge.com/wp-content/uploads/2025/01/Vector-1.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.v-0 {
+  background: url(https://vinsonedge.com/wp-content/uploads/2025/01/Rectangle-18.png);
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.v-0 video {
+  padding: 33px;
+  border-radius: 60px;
+}
+
+/* Feature section */
+.f-card {
+  background: linear-gradient(287.96deg, rgba(123, 191, 255, 0.7) -15.74%, rgba(45, 201, 162, 0.7) 131.32%);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.feat1 {
+  bottom: 34px;
+  right: 34px;
+}
+
+.feat2 {
+  top: 34px;
+  right: 34px;
+}
+
+.feat3 {
+  top: 160px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+}
+
+.feat4 {
+  top: 160px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+.PbasicBtn {
+  background: inherit !important;
+  border: 1px solid #B2B2B2;
+  border-radius: 45px;
+  padding: 26px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.premiumBtn {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 26px;
+  border-radius: 45px;
+  font-size: 18px;
+  background: #22BABB;
+}
+
+.premiumBtn:hover {
+  background: #0a8b80e6 !important
+}
+
+.hover\:bg-primary\/90:hover {
+  background: #0a8b80e6 !important
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+}
+
+.fiTem-card {
+  margin: 49px 0 0 4%;
+  padding: 20px;
+  flex: 0 0 45%;
+  background: #fff;
+}
+
+.fiTem-card:nth-child(2) {
+  margin-top: 90px;
+}
+
+.fiTem-card:nth-child(4) {
+  margin-top: 90px;
+}
+
+.bgResult {
+  background: url(https://vinsonedge.com/wp-content/uploads/2025/01/Vector-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  padding-top: 6rem;
+}
+
+.rahul-t .inline-flex {
+  display: block;
+  width: 100%;
+}
+
+.r-item {
+  margin-top: -80px;
+}
+
+.data-\[state\=active\]\:shadow-sm[data-state="active"] {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background: linear-gradient(247.27deg, #7BBFFF -34.83%, #2DC9A2 100.58%);
+  border-radius: 7px;
+}
+
+.bgfaq {
+  background: url(https://vinsonedge.com/wp-content/uploads/2025/01/Vector-5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.faqBack {
+  padding: 20px;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.support {
+  background: #DAEDFF;
+  border: 1px solid #B2B2B2;
+  border-radius: 20px;
+}
+
+.d-bg {
+  background: #8CFFB0;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+}
+
+.mMacl {
+  margin-top: -122px;
+}
+
+.swiper {
+  overflow: inherit !important;
+}
+
+.mar-15 {
+  margin-top: 45px;
+}
+
+.flex-wra {
+  flex-wrap: wrap;
+}
+
+.testimonial-blur-effect {
+  position: relative;
+}
+
+.testimonial-blur-effect::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 139px;
+  background: rgba(255, 255, 255, 0.9);
+  filter: blur(8px);
+}
+
+.less-more-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+
+.aimg-1 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #171717;
+  border-radius: 115px;
+  max-height: 381px;
+  margin: auto;
+}
+
+.r-1 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #171717;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.aboutush {
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.005em;
+  color: #000000;
+}
+
+.element-background-overlay {
+  background-image: url(https://dtthemes.kinsta.cloud/a-for-apple/wp-content/uploads/sites/2/2024/01/text-section-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.bg-int {
+  background: url(https://vedsadhana.com/wp-content/uploads/2025/01/Vector-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.login-btn {
+  background: #2DC9A2;
+  border-radius: 28px;
+}
+
+.f-b {
+  border: 1px solid #3B3A3A;
+  border-radius: 15px;
+}
+
+.form-bg {
+  background: rgba(45, 201, 162, 0.28);
+  border: 1px solid #3B3A3A;
+  border-radius: 20px;
+  border-radius: 30px 30px 30px 30px;
+  padding: 60px 75px 60px 75px;
+}
+
+.fill-box {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.btn-c {
+  transform: none;
+  width: 130px;
+  height: 50px;
+  border-radius: 25px;
+  background: #348888;
+  box-shadow: 3px 3px 0 0 #000000;
+  transition: all 0.3s ease;
+}
+
+.c-card {
+  background: rgba(45, 201, 162, 0.28);
+  border: 1px solid #3B3A3A;
+  border-radius: 20px;
+}
+
+.bg-confidence {
+  background: url(https://vedsadhana.com/wp-content/uploads/2025/02/mock-exam.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-product {
+  border: 1px dashed #3B3A3A;
+  border-radius: 10px;
+}
+
+.product-price {
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  color: #348888;
+}
+
+.bg-product:hover {
+  border: 1px dashed #348888;
+}
+
+.group .bg-background {
+  background: inherit;
+}
+
+.pro-btn {
+  background: #22BABB;
+  box-shadow: 2px 4px 0px 0.5px #042626;
+  border-radius: 45px;
+}
+
+.bg-benefits {
+  background: url(https://vedsadhana.com/wp-content/uploads/2025/02/BENEFITS-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  ;
+}
+
+/* Media Query */
+@media screen and (max-width: 767px) {
+  .v-0 video {
+    padding: 18px;
+    border-radius: 34px;
+    min-height: inherit !important;
+  }
+
+  .py-24 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .py-16 {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+  }
+
+  .student {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .text-6xl {
+    font-size: 2.60rem;
+  }
+
+  .text-xl {
+    font-size: 1rem;
+  }
+
+  .mbtn {
+    margin-bottom: 30px;
+  }
+
+  .min-w-\[450px\] {
+    min-width: 280px;
+  }
+
+  .top-\[10\%\] {
+    top: 0%
+  }
+
+  .right-\[-5\%\] {
+    right: 0%;
+  }
+
+  .feat1 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text-\[43px\] {
+    font-size: 22px;
+  }
+
+  .leading-\[50px\] {
+    line-height: 22px;
+  }
+
+  .container {
+    width: inherit !important
+  }
+
+  .bgResult .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fiTem-card {
+    flex: 0 0 92%;
+  }
+
+  .flex-wra {
+    flex-wrap: wrap;
+  }
+}

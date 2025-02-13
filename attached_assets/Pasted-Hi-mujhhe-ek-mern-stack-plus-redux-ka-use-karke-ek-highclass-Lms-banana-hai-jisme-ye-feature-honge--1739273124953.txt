@@ -1,0 +1,30 @@
+Hi mujhhe ek mern stack plus redux ka use karke ek highclass Lms banana hai jisme ye feature honge 
+Super admin me
+1. user management (jisme user store honge sabhi and crud operation chalega add edit delete update )
+2. admin Teacher ko add kar sakta hai ya invite link send kar sakta hai
+3. admin Stuent ko add kar sakta hai ya invite link send kar sakta hai 
+4. Question management 
+   (jisme question category and subcategory menu hoga poore module me and question upload form hoga) isme crud chalega 
+5. inn question ka use karke exam create kar sakte hai (admin and teacher both). questions using rich text editor (MathJax + Quill) letex ka use karke banege  
+6. ye exam scadule kar sakte hai kisi bhi date ke liye. ye exam offline hoga user apne dashbord se exam downloa karega pdf formate me and usme tick mark karke upload karega hum ocr ka use karke and aws textreder ka use karke ans sheet and result show kar denge
+7.admin Teacher ko job and student assign kar sakta hai 
+8. Teacher live class and record class le sakte hai 
+9. E-commerse base system bhi chahiye q ki hame pdf downlodebal product sale karne hai 
+10. subcription system bhi banana hai 
+11. frontend pages ka content daynamick karna hai 
+12. stripe payment gateways lgana hai 
+13. Teacher ka alag se dashbord hoga jo admin ne create kiya ha ya fir invite kiya hai 
+Teacher assign kiye gye bachho ki class le sakti hai assignment de sakti hai file sharing kar sakti hai 
+14. user dahsbord alag se hoga jitne bhi user Signuop login karnge 
+15. user "parents apni children ko invite or colobrate kar sakte hai apne dashbord me through email id se
+16. user apne bachoo ki groth and performance check kar sakte hai agar user ne subcription ya exam purchase kiya hai to  bus yhi kam hona hai 
+17, user dashboard me gamification and prising system hona chahiye
+
+frontend me Reactjs ke sath redux shadcn Ui talwind css ka use karna hai
+frontend pages ka content daynamick karna hai home page, about us, contact us, blog, course, exam, login, signup, user dashboard, teacher dashboard, admin dashboard,
+Website Frontend par signup me
+ username
+ email
+pass
+ honeg login with Google 
+Login with Signup Bhi hoga
